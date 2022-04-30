@@ -23,7 +23,7 @@
     "prejss:components": "prejss-cli dist/components/combined.css --format commonjs --pretty",
     "build:components": "npm run postcss:components && npm run combine:components && npm run prejss:components",
     "clear": "rm -rf dist/*",
-    "build": "npm run clear && npm run build:base && npm run build:components && cd test && npm run build && cd ..",
+    "build": "npm run clear && npm run build:base && npm run build:components",
     "watch": "npm-watch build"
   },
   "author": "Alireza Sarabchi <a.sarabchi@gmail.com> (https://alireza.ws)",

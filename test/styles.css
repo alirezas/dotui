@@ -1,7 +1,0 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
-.preview {
-  @apply flex items-center justify-center p-8 border border-dot-gray-300 rounded-xl mb-8 bg-dot-gray-25/25;
-}
