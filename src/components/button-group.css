@@ -1,0 +1,61 @@
+.button-group {
+  @apply inline-flex align-middle relative;
+
+  > .button {
+    @apply relative;
+
+    &:focus,
+    &:hover,
+    &:active {
+      &:not(:disabled, .disabled) {
+        @apply z-[1];
+      }
+    }
+
+    &:not(:last-child) {
+      @apply rounded-l-none;
+    }
+    &:not(:first-child) {
+      @apply rounded-r-none -mr-px;
+    }
+  }
+}
+
+.button-group-vertical {
+  @apply inline-flex align-middle relative items-start justify-center flex-col;
+
+  &.align-buttons-right {
+    > .button {
+      @apply justify-start;
+    }
+  }
+  &.align-buttons-left {
+    > .button {
+      @apply justify-end;
+    }
+  }
+  &.align-buttons-center {
+    > .button {
+      @apply justify-center;
+    }
+  }
+
+  > .button {
+    @apply relative w-full;
+
+    &:focus,
+    &:hover,
+    &:active {
+      &:not(:disabled, .disabled) {
+        @apply z-[1];
+      }
+    }
+
+    &:not(:last-child) {
+      @apply rounded-b-none;
+    }
+    &:not(:first-child) {
+      @apply rounded-t-none -mt-px;
+    }
+  }
+}

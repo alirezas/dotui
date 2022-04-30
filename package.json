@@ -1,0 +1,45 @@
+{
+  "name": "@dot/ui",
+  "version": "0.2.0-alpha",
+  "description": "",
+  "main": "index.js",
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "css",
+      "quiet": false
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postcss:base": "postcss src/base/*.css --base src --dir dist",
+    "combine:base": "cat dist/base/*.css > dist/base/combined.css",
+    "prejss:base": "prejss-cli dist/base/combined.css --format commonjs --pretty",
+    "build:base": "npm run postcss:base && npm run combine:base && npm run prejss:base",
+    "postcss:components": "postcss src/components/*.css --base src --dir dist",
+    "combine:components": "cat dist/components/*.css > dist/components/combined.css",
+    "prejss:components": "prejss-cli dist/components/combined.css --format commonjs --pretty",
+    "build:components": "npm run postcss:components && npm run combine:components && npm run prejss:components",
+    "clear": "rm -rf dist/*",
+    "build": "npm run clear && npm run build:base && npm run build:components && cd test && npm run build && cd ..",
+    "watch": "npm-watch build"
+  },
+  "author": "Alireza Sarabchi",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "npm-watch": "^0.11.0",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.1.0",
+    "postcss-js": "^4.0.0",
+    "postcss-nested": "^5.0.6",
+    "prejss-cli": "^0.3.3",
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "prejss-postcss-parser": "^0.3.2"
+  }
+}

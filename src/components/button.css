@@ -1,0 +1,245 @@
+.button {
+  @apply inline-flex py-2.5 px-4 rounded-lg transition duration-200 font-medium cursor-pointer border box-border whitespace-nowrap leading-normal text-center justify-center;
+
+  &.disabled,
+  &:disabled {
+    @apply cursor-not-allowed;
+  }
+
+  &-sm {
+    @apply py-2 px-3.5 text-tiny;
+  }
+  &-lg {
+    @apply py-2.5 px-4.5;
+  }
+  &-xl {
+    @apply py-3 px-5;
+  }
+  &-2xl {
+    @apply py-4 px-7;
+  }
+
+  &-icon {
+    > .icon,
+    > svg {
+      @apply fill-current w-5 h-5 ml-2 items-center;
+    }
+
+    &.button {
+      @apply pr-3;
+    }
+    &.button-sm {
+      @apply pr-2.5;
+      > .icon,
+      > svg {
+        @apply w-4 h-4;
+      }
+    }
+    &.button-lg {
+      @apply pr-3.5;
+    }
+    &.button-xl {
+      @apply pr-4;
+    }
+    &.button-2xl {
+      @apply pr-6;
+      > .icon,
+      > svg {
+        @apply w-6 h-6 ml-3;
+      }
+    }
+  }
+
+  &-icon--left {
+    > .icon,
+    > svg {
+      @apply ml-0 mr-2 order-last;
+    }
+
+    &.button {
+      @apply pl-3 pr-4;
+    }
+    &.button-sm {
+      @apply pl-2.5 pr-3.5;
+    }
+    &.button-lg {
+      @apply pl-[14px] pr-[18px];
+    }
+    &.button-xl {
+      @apply pl-4 pr-5;
+    }
+    &.button-2xl {
+      @apply pl-6 pr-7;
+      > .icon,
+      > svg {
+        @apply mr-3 ml-0;
+      }
+    }
+  }
+
+  &-icon--only {
+    > .icon,
+    > svg {
+      @apply m-0;
+    }
+
+    &.button {
+      @apply px-2.5;
+    }
+    &.button-sm {
+      @apply px-2;
+    }
+    &.button-lg {
+      @apply px-2.5;
+    }
+    &.button-xl {
+      @apply px-3;
+    }
+    &.button-2xl {
+      @apply px-4;
+      > .icon,
+      > svg {
+        @apply m-0;
+      }
+    }
+  }
+
+  &-primary {
+    @apply bg-indigo-500 text-white border-indigo-500;
+
+    &.active,
+    &:active,
+    &:hover {
+      @apply bg-indigo-600 border-indigo-600;
+    }
+
+    &:focus {
+      @apply bg-indigo-500 ring-4 ring-indigo-100 border-indigo-500;
+    }
+
+    &.disabled,
+    &:disabled {
+      @apply bg-indigo-300 border-indigo-300;
+    }
+  }
+
+  &-primary--naked {
+    @apply border-transparent text-indigo-700;
+
+    &.active,
+    &:active,
+    &:hover {
+      @apply bg-indigo-50;
+    }
+
+    &:focus {
+      @apply text-indigo-700 bg-transparent;
+    }
+
+    &.disabled,
+    &:disabled {
+      @apply text-dot-gray-300 bg-transparent;
+    }
+  }
+
+  &-gray {
+    @apply text-dot-gray-700 bg-white border-dot-gray-300 shadow-dot-xs;
+
+    &.active,
+    &:active,
+    &:hover {
+      @apply text-dot-gray-800 bg-dot-gray-50;
+    }
+
+    &:focus {
+      @apply bg-white ring-4 ring-dot-gray-100 text-dot-gray-700;
+    }
+
+    &.disabled,
+    &:disabled {
+      @apply text-dot-gray-300 border-dot-gray-200;
+
+      &.active,
+      &:active,
+      &:hover {
+        @apply text-dot-gray-300 border-dot-gray-200;
+      }
+    }
+  }
+
+  &-gray--naked {
+    @apply border-transparent text-dot-gray-500;
+
+    &.active,
+    &:active,
+    &:hover {
+      @apply bg-dot-gray-50 text-dot-gray-600;
+    }
+
+    &:focus {
+      @apply text-dot-gray-500 bg-transparent;
+    }
+
+    &.disabled,
+    &:disabled {
+      @apply text-dot-gray-300 bg-transparent;
+    }
+  }
+
+  &-success {
+    @apply bg-dot-green-400 text-white border-dot-green-400;
+
+    &.active,
+    &:active,
+    &:hover {
+      @apply bg-dot-green-500 border-dot-green-500;
+    }
+
+    &:focus {
+      @apply bg-dot-green-400 ring-4 ring-dot-green-100 border-dot-green-400;
+    }
+
+    &.disabled,
+    &:disabled {
+      @apply bg-dot-green-300 border-dot-green-300;
+    }
+  }
+
+  &-danger {
+    @apply bg-red-500 text-white border-red-500;
+
+    &.active,
+    &:active,
+    &:hover {
+      @apply bg-red-600 border-red-600;
+    }
+
+    &:focus {
+      @apply bg-red-500 ring-4 ring-red-100 border-red-500;
+    }
+
+    &.disabled,
+    &:disabled {
+      @apply bg-red-300 border-red-300;
+    }
+  }
+
+  &-warning {
+    @apply bg-dot-yellow-300 text-dot-yellow-700 border-dot-yellow-300;
+
+    &.active,
+    &:active,
+    &:hover {
+      @apply bg-dot-yellow-400 border-dot-yellow-400 text-dot-yellow-800;
+    }
+
+    &:focus {
+      @apply bg-dot-yellow-300 ring-4 ring-dot-yellow-100 border-dot-yellow-300;
+    }
+
+    &.disabled,
+    &:disabled {
+      @apply bg-dot-yellow-200 border-dot-yellow-200 text-dot-yellow-400;
+    }
+  }
+}

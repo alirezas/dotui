@@ -1,0 +1,87 @@
+.badge {
+  @apply inline-flex rounded-full py-0.5 px-2.5 align-baseline whitespace-nowrap font-normal text-base leading-normal items-center relative;
+
+  &-sm {
+    @apply px-2 text-tiny;
+
+    &.badge-avatar {
+      @apply pr-0.5;
+    }
+    &.badge-close-button {
+      @apply pl-0.5;
+    }
+  }
+  &-lg {
+    @apply px-3 py-1;
+
+    &.badge-avatar {
+      @apply pr-1.5;
+    }
+    &.badge-close-button {
+      @apply pl-1.5;
+    }
+  }
+
+  &-dot {
+    &::before {
+      content: "";
+      @apply w-1.5 h-1.5 block rounded-full bg-current ml-1.5 opacity-60;
+    }
+  }
+
+  &-avatar {
+    @apply pr-1;
+
+    > img {
+      @apply w-4 h-4 rounded-full ml-1.5 object-cover;
+    }
+  }
+
+  &-icon {
+    > .icon,
+    > svg {
+      @apply w-3 h-3 fill-current opacity-60 ml-1.5;
+    }
+
+    &--left {
+      > .icon,
+      > svg {
+        @apply order-last ml-0 mr-1.5;
+      }
+    }
+  }
+
+  &-close-button {
+    @apply pl-1;
+
+    > button {
+      @apply border-none flex items-center justify-center relative w-4 h-4 rounded-full bg-dot-gray-800 bg-opacity-0 transition mr-0.5;
+      > svg {
+        @apply w-3 h-3 fill-current text-current;
+      }
+
+      &:hover {
+        @apply bg-opacity-10;
+      }
+    }
+  }
+
+  &-gray {
+    @apply bg-dot-gray-100 text-dot-gray-700;
+  }
+  &-primary {
+    @apply bg-indigo-100 text-indigo-700;
+  }
+  &-danger {
+    @apply bg-red-100 text-red-700;
+  }
+  &-warning {
+    @apply bg-amber-100 text-amber-700;
+  }
+  &-success {
+    @apply bg-emerald-100 text-emerald-700;
+  }
+  &-info {
+    @apply bg-blue-100 text-blue-700;
+  }
+}

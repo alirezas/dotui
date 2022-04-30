@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fa"
+      dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v32.102/Vazirmatn-font-face.css"
+          rel="stylesheet"
+          type="text/css" />
+    <link rel="stylesheet"
+          href="./dist/index.css">
+    <title>Buttons - @dot/ui</title>
+</head>
+
+<body class="font-vazirmatn p-16">
+    <div class="container mx-auto">
+        <h2>Button variants</h2>
+        <div class="preview">
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <button type="button"
+                        class="button button-primary">دکمه اصلی</button>
+                <button type="button"
+                        class="button button-gray">دکمه طوسی</button>
+                <button type="button"
+                        class="button button-primary--naked">دکمه اصلی لخت</button>
+                <button type="button"
+                        class="button button-gray--naked">دکمه طوسی لخت</button>
+                <button type="button"
+                        class="button button-success">دکمه موفقیت</button>
+                <button type="button"
+                        class="button button-danger">دکمه خطر</button>
+                <button type="button"
+                        class="button button-warning">دکمه اخطار</button>
+            </div>
+        </div>
+
+        <h2>Button sizes</h2>
+        <div class="preview">
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <button type="button"
+                        class="button button-primary button-sm">
+                    کوچک
+                </button>
+                <button type="button"
+                        class="button button-primary">
+                    عادی
+                </button>
+                <button type="button"
+                        class="button button-primary button-lg">
+                    بزرگ
+                </button>
+                <button type="button"
+                        class="button button-primary button-xl">
+                    خیلی بزرگ
+                </button>
+                <button type="button"
+                        class="button button-primary button-2xl">
+                    خیلی خیلی بزرگ
+                </button>
+            </div>
+        </div>
+
+        <h2>Button with different tags</h2>
+        <div class="preview">
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <a href="#"
+                   class="button button-primary">
+                    لینک
+                </a>
+                <button type="submit"
+                        class="button button-primary">
+                    دکمه
+                </button>
+                <input type="button"
+                       class="button button-primary"
+                       value="اینپوت" />
+                <input type="submit"
+                       class="button button-primary"
+                       value="ثبت" />
+                <input type="reset"
+                       class="button button-primary"
+                       value="لغو" />
+            </div>
+        </div>
+
+        <h2>Disabled buttons</h2>
+        <div class="preview">
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <button type="button"
+                        disabled
+                        class="button button-primary">دکمه اصلی</button>
+                <button type="button"
+                        disabled
+                        class="button button-gray">دکمه طوسی</button>
+                <button type="button"
+                        disabled
+                        class="button button-primary--naked">دکمه اصلی لخت</button>
+                <button type="button"
+                        disabled
+                        class="button button-gray--naked">دکمه طوسی لخت</button>
+                <button type="button"
+                        disabled
+                        class="button button-success">دکمه موفقیت</button>
+                <button type="button"
+                        disabled
+                        class="button button-danger">دکمه خطر</button>
+                <button type="button"
+                        disabled
+                        class="button button-warning">دکمه اخطار</button>
+            </div>
+        </div>
+
+        <h2>Buttons with icon</h2>
+        <div class="preview">
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <button type="button"
+                        class="button button-primary button-sm button-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24">
+                        <path fill="none"
+                              d="M0 0h24v24H0z" />
+                        <path
+                              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                    </svg>
+                    کوچک
+                </button>
+                <button type="button"
+                        class="button button-primary button-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24">
+                        <path fill="none"
+                              d="M0 0h24v24H0z" />
+                        <path
+                              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                    </svg>
+                    عادی
+                </button>
+                <button type="button"
+                        class="button button-primary button-lg button-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24">
+                        <path fill="none"
+                              d="M0 0h24v24H0z" />
+                        <path
+                              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                    </svg>
+                    بزرگ
+                </button>
+                <button type="button"
+                        class="button button-primary button-xl button-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24">
+                        <path fill="none"
+                              d="M0 0h24v24H0z" />
+                        <path
+                              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                    </svg>
+                    خیلی بزرگ
+                </button>
+                <button type="button"
+                        class="button button-primary button-2xl button-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24">
+                        <path fill="none"
+                              d="M0 0h24v24H0z" />
+                        <path
+                              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                    </svg>
+                    خیلی خیلی بزرگ
+                </button>
+            </div>
+        </div>
+
+        <h2>Buttons with left icon</h2>
+        <div class="preview">
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <button type="button"
+                        class="button button-primary button-sm button-icon button-icon--left">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24">
+                        <path fill="none"
+                              d="M0 0h24v24H0z" />
+                        <path
+                              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                    </svg>
+                    کوچک
+                </button>
+                <button type="button"
+                        class="button button-primary button-icon button-icon--left">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24">
+                        <path fill="none"
+                              d="M0 0h24v24H0z" />
+                        <path
+                              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                    </svg>
+                    عادی
+                </button>
+                <button type="button"
+                        class="button button-primary button-lg button-icon button-icon--left">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24">
+                        <path fill="none"
+                              d="M0 0h24v24H0z" />
+                        <path
+                              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                    </svg>
+                    بزرگ
+                </button>
+                <button type="button"
+                        class="button button-primary button-xl button-icon button-icon--left">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24">
+                        <path fill="none"
+                              d="M0 0h24v24H0z" />
+                        <path
+                              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                    </svg>
+                    خیلی بزرگ
+                </button>
+                <button type="button"
+                        class="button button-primary button-2xl button-icon button-icon--left">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24">
+                        <path fill="none"
+                              d="M0 0h24v24H0z" />
+                        <path
+                              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                    </svg>
+                    خیلی خیلی بزرگ
+                </button>
+            </div>
+        </div>
+
+        <h2>Icon only buttons</h2>
+        <div class="preview">
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <button type="button"
+                        class="button button-primary button-sm button-icon button-icon--only">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24">
+                        <path fill="none"
+                              d="M0 0h24v24H0z" />
+                        <path
+                              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                    </svg>
+                </button>
+                <button type="button"
+                        class="button button-primary button-icon button-icon--only">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24">
+                        <path fill="none"
+                              d="M0 0h24v24H0z" />
+                        <path
+                              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                    </svg>
+                </button>
+                <button type="button"
+                        class="button button-primary button-lg button-icon button-icon--only">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24">
+                        <path fill="none"
+                              d="M0 0h24v24H0z" />
+                        <path
+                              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                    </svg>
+                </button>
+                <button type="button"
+                        class="button button-primary button-xl button-icon button-icon--only">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24">
+                        <path fill="none"
+                              d="M0 0h24v24H0z" />
+                        <path
+                              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                    </svg>
+                </button>
+                <button type="button"
+                        class="button button-primary button-2xl button-icon button-icon--only">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24">
+                        <path fill="none"
+                              d="M0 0h24v24H0z" />
+                        <path
+                              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <h2>Button group</h2>
+        <div class="preview">
+            <div class="flex flex-col items-center justify-center space-y-4">
+                <div class="button-group">
+                    <button class="button button-gray">دکمه اول</button>
+                    <button class="button button-gray">دکمه وسط</button>
+                    <button class="button button-gray">دکمه آخر</button>
+                </div>
+                <div class="button-group">
+                    <button class="button button-gray button-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24">
+                            <path fill="none"
+                                  d="M0 0h24v24H0z" />
+                            <path
+                                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                        </svg>
+                        دکمه اول
+                    </button>
+                    <button class="button button-gray button-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24">
+                            <path fill="none"
+                                  d="M0 0h24v24H0z" />
+                            <path
+                                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                        </svg>
+                        دکمه وسط
+                    </button>
+                    <button class="button button-gray button-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24">
+                            <path fill="none"
+                                  d="M0 0h24v24H0z" />
+                            <path
+                                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                        </svg>
+                        دکمه آخر
+                    </button>
+                </div>
+                <div class="button-group">
+                    <button class="button button-primary">
+                        دکمه اول
+                    </button>
+                    <button class="button button-primary">
+                        دکمه وسط
+                    </button>
+                    <button class="button button-primary">
+                        دکمه آخر
+                    </button>
+                </div>
+                <div class="button-group">
+                    <button class="button button-primary button-2xl">
+                        دکمه اول
+                    </button>
+                    <button class="button button-primary button-2xl">
+                        دکمه وسط
+                    </button>
+                    <button class="button button-primary button-2xl">
+                        دکمه آخر
+                    </button>
+                </div>
+                <div class="button-group">
+                    <button class="button button-gray button-icon button-icon--only">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24">
+                            <path fill="none"
+                                  d="M0 0h24v24H0z" />
+                            <path
+                                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                        </svg>
+                    </button>
+                    <button class="button button-gray button-icon button-icon--only">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24">
+                            <path fill="none"
+                                  d="M0 0h24v24H0z" />
+                            <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" /></svg>
+                    </button>
+                    <button class="button button-gray button-icon button-icon--only">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24">
+                            <path fill="none"
+                                  d="M0 0h24v24H0z" />
+                            <path d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="button-group">
+                    <a class="button button-gray button-icon button-icon--only">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24">
+                            <path fill="none"
+                                  d="M0 0h24v24H0z" />
+                            <path d="M12.172 12L9.343 9.172l1.414-1.415L15 12l-4.243 4.243-1.414-1.415z" /></svg>
+                    </a>
+                    <a class="button button-gray">
+                        ۱
+                    </a>
+                    <a class="button button-gray">
+                        ۲
+                    </a>
+                    <span class="button button-gray disabled !border-dot-gray-300 !bg-dot-gray-50">
+                        ...
+                    </span>
+                    <a class="button button-gray">
+                        ۱۰
+                    </a>
+                    <a class="button button-gray">
+                        ۱۱
+                    </a>
+                    <a class="button button-gray button-icon button-icon--only">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24">
+                            <path fill="none"
+                                  d="M0 0h24v24H0z" />
+                            <path d="M11.828 12l2.829 2.828-1.414 1.415L9 12l4.243-4.243 1.414 1.415L11.828 12z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h2>Button group vertical</h2>
+        <div class="preview">
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <div class="button-group-vertical">
+                    <button class="button button-gray">دکمه اول</button>
+                    <button class="button button-gray">دکمه وسط</button>
+                    <button class="button button-gray">دکمه آخر</button>
+                </div>
+                <div class="button-group-vertical">
+                    <button class="button button-primary active">دکمه اول</button>
+                    <button class="button button-primary">دکمه وسط</button>
+                    <button class="button button-primary">دکمه آخر</button>
+                </div>
+                <div class="button-group-vertical align-buttons-right">
+                    <button class="button button-gray button-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24">
+                            <path fill="none"
+                                  d="M0 0h24v24H0z" />
+                            <path
+                                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                        </svg>
+                        دکمه اول
+                    </button>
+                    <button class="button button-gray button-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24">
+                            <path fill="none"
+                                  d="M0 0h24v24H0z" />
+                            <path
+                                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                        </svg>
+                        دکمه وسط که میگن
+                    </button>
+                    <button class="button button-gray button-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24">
+                            <path fill="none"
+                                  d="M0 0h24v24H0z" />
+                            <path
+                                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z" />
+                        </svg>
+                        دکمه آخر
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
