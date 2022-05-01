@@ -1,0 +1,92 @@
+.button-group {
+
+    position: relative;
+
+    display: inline-flex;
+
+    vertical-align: middle
+}
+
+  .button-group > .button {
+
+    position: relative
+}
+
+  .button-group > .button:focus:not(:disabled, .disabled), .button-group > .button:hover:not(:disabled, .disabled), .button-group > .button:active:not(:disabled, .disabled) {
+
+    z-index: 1
+}
+
+  .button-group > .button:not(:last-child) {
+
+    border-top-left-radius: 0px;
+
+    border-bottom-left-radius: 0px
+}
+
+  .button-group > .button:not(:first-child) {
+
+    margin-right: -1px;
+
+    border-top-right-radius: 0px;
+
+    border-bottom-right-radius: 0px
+}
+
+.button-group-vertical {
+
+    position: relative;
+
+    display: inline-flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+    vertical-align: middle
+}
+
+.button-group-vertical.align-buttons-right > .button {
+
+    justify-content: flex-start
+}
+
+.button-group-vertical.align-buttons-left > .button {
+
+    justify-content: flex-end
+}
+
+.button-group-vertical.align-buttons-center > .button {
+
+    justify-content: center
+}
+
+.button-group-vertical > .button {
+
+    position: relative;
+
+    width: 100%
+}
+
+.button-group-vertical > .button:focus:not(:disabled, .disabled), .button-group-vertical > .button:hover:not(:disabled, .disabled), .button-group-vertical > .button:active:not(:disabled, .disabled) {
+
+    z-index: 1
+}
+
+.button-group-vertical > .button:not(:last-child) {
+
+    border-bottom-right-radius: 0px;
+
+    border-bottom-left-radius: 0px
+}
+
+.button-group-vertical > .button:not(:first-child) {
+
+    margin-top: -1px;
+
+    border-top-left-radius: 0px;
+
+    border-top-right-radius: 0px
+}
