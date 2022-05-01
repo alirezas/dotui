@@ -15,6 +15,18 @@
     "utils/*",
     "*.js"
   ],
+  "keywords": [
+      "ui",
+      "css",
+      "tailwindcss",
+      "design",
+      "ui-kit",
+      "design-system",
+      "ui-library",
+      "ui-components",
+      "persian",
+      "farsi"
+  ],
   "watch": {
     "build": {
       "patterns": [
