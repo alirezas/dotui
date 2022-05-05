@@ -1,7 +1,7 @@
 const fontSizeCalculator = require('./utils/fontsize-calculator')
 const spacingCalculator = require('./utils/spacing-calculator')
-const extendedColors = require('./src/extended/colors')
-const extendedBoxShadows = require('./src/extended/box-shadows')
+const extendedColors = require('./extend/colors')
+const extendedBoxShadows = require('./extend/box-shadows')
 const rem = require('./utils/rem-calculator')
 
 const DEFAULT_OPTIONS = {
