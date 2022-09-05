@@ -2,8 +2,8 @@ const plugin = require('tailwindcss/plugin')
 
 const fontSizeCalculator = require('./utils/fontsize-calculator')
 const spacingCalculator = require('./utils/spacing-calculator')
-// const extendedColors = require('./extend/colors')
-// const extendedBoxShadows = require('./extend/box-shadows')
+const extendedColors = require('./extend/colors')
+const extendedBoxShadows = require('./extend/box-shadows')
 
 // const base = require('./dist/base/combined')
 // const components = require('./dist/components/combined')
@@ -29,11 +29,11 @@ const dotui = plugin.withOptions((options) => {
   return {
     theme: {
       spacing: spacingCalculator(settings),
-      fontSize: fontSizeCalculator(settings)
-      // extend: {
-      //   colors: extendedColors,
-      //   boxShadow: extendedBoxShadows
-      // }
+      fontSize: fontSizeCalculator(settings),
+      extend: {
+        colors: extendedColors,
+        boxShadow: extendedBoxShadows
+      }
     }
   }
 })

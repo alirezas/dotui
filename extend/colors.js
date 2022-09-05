@@ -1,5 +1,5 @@
 module.exports = {
-  'dot-gray': {
+  'n-gray': {
     25: '#FCFCFD',
     50: '#F9FAFB',
     100: '#F2F4F7',
@@ -12,7 +12,7 @@ module.exports = {
     800: '#1D2939',
     900: '#101828'
   },
-  'dot-blue': {
+  'n-blue': {
     25: '#F2F8FF',
     50: '#C2E0FF',
     100: '#93C8FF',
@@ -25,7 +25,7 @@ module.exports = {
     800: '#0046B5',
     900: '#003185'
   },
-  'dot-red': {
+  'n-red': {
     25: '#FFF9F8',
     50: '#FFCCC9',
     100: '#FFA19A',
@@ -38,7 +38,7 @@ module.exports = {
     800: '#AF1600',
     900: '#7A1000'
   },
-  'dot-yellow': {
+  'n-yellow': {
     25: '#FFFEF5',
     50: '#FFFCEB',
     100: '#FFF8D2',
@@ -51,7 +51,7 @@ module.exports = {
     800: '#A94700',
     900: '#702500'
   },
-  'dot-green': {
+  'n-green': {
     25: '#F5FFF8',
     50: '#C0FFD5',
     100: '#8CFFB3',

@@ -1,6 +1,7 @@
 const defaultConfig = require('tailwindcss/defaultConfig')
 const rem = require('./rem-calculator')
 const defaultSpaces = defaultConfig.theme.spacing
+defaultSpaces['4.5'] = '18px'
 
 module.exports = ({ baseFontSize, spacingUnit }) => {
   return Object.keys(defaultSpaces).reduce((acc, size) => {

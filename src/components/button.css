@@ -152,70 +152,70 @@
 
     &.disabled,
     &:disabled {
-      @apply text-dot-gray-300 bg-transparent;
+      @apply text-n-gray-300 bg-transparent;
     }
   }
 
   &-gray {
-    @apply text-dot-gray-700 bg-white border-dot-gray-300 shadow-dot-xs;
+    @apply text-n-gray-700 bg-white border-n-gray-300 shadow-n-xs;
 
     &.active,
     &:active,
     &:hover {
-      @apply text-dot-gray-800 bg-dot-gray-50;
+      @apply text-n-gray-800 bg-n-gray-50;
     }
 
     &:focus {
-      @apply bg-white ring-4 ring-dot-gray-100 text-dot-gray-700;
+      @apply bg-white ring-4 ring-n-gray-100 text-n-gray-700;
     }
 
     &.disabled,
     &:disabled {
-      @apply text-dot-gray-300 border-dot-gray-200;
+      @apply text-n-gray-300 border-n-gray-200;
 
       &.active,
       &:active,
       &:hover {
-        @apply text-dot-gray-300 border-dot-gray-200;
+        @apply text-n-gray-300 border-n-gray-200;
       }
     }
   }
 
   &-gray--naked {
-    @apply border-transparent text-dot-gray-500;
+    @apply border-transparent text-n-gray-500;
 
     &.active,
     &:active,
     &:hover {
-      @apply bg-dot-gray-50 text-dot-gray-600;
+      @apply bg-n-gray-50 text-n-gray-600;
     }
 
     &:focus {
-      @apply text-dot-gray-500 bg-transparent;
+      @apply text-n-gray-500 bg-transparent;
     }
 
     &.disabled,
     &:disabled {
-      @apply text-dot-gray-300 bg-transparent;
+      @apply text-n-gray-300 bg-transparent;
     }
   }
 
   &-success {
-    @apply bg-dot-green-400 text-white border-dot-green-400;
+    @apply bg-n-green-400 text-white border-n-green-400;
 
     &.active,
     &:active,
     &:hover {
-      @apply bg-dot-green-500 border-dot-green-500;
+      @apply bg-n-green-500 border-n-green-500;
     }
 
     &:focus {
-      @apply bg-dot-green-400 ring-4 ring-dot-green-100 border-dot-green-400;
+      @apply bg-n-green-400 ring-4 ring-n-green-100 border-n-green-400;
     }
 
     &.disabled,
     &:disabled {
-      @apply bg-dot-green-300 border-dot-green-300;
+      @apply bg-n-green-300 border-n-green-300;
     }
   }
 
@@ -239,21 +239,21 @@
   }
 
   &-warning {
-    @apply bg-dot-yellow-300 text-dot-yellow-700 border-dot-yellow-300;
+    @apply bg-n-yellow-300 text-n-yellow-700 border-n-yellow-300;
 
     &.active,
     &:active,
     &:hover {
-      @apply bg-dot-yellow-400 border-dot-yellow-400 text-dot-yellow-800;
+      @apply bg-n-yellow-400 border-n-yellow-400 text-n-yellow-800;
     }
 
     &:focus {
-      @apply bg-dot-yellow-300 ring-4 ring-dot-yellow-100 border-dot-yellow-300;
+      @apply bg-n-yellow-300 ring-4 ring-n-yellow-100 border-n-yellow-300;
     }
 
     &.disabled,
     &:disabled {
-      @apply bg-dot-yellow-200 border-dot-yellow-200 text-dot-yellow-400;
+      @apply bg-n-yellow-200 border-n-yellow-200 text-n-yellow-400;
     }
   }
 }
