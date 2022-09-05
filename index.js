@@ -1,35 +1,38 @@
 const plugin = require('tailwindcss/plugin')
 
 const fontSizeCalculator = require('./utils/fontsize-calculator')
-const spacingCalculator = require('./utils/spacing-calculator')
-const extendedColors = require('./extend/colors')
-const extendedBoxShadows = require('./extend/box-shadows')
+// const spacingCalculator = require('./utils/spacing-calculator')
+// const extendedColors = require('./extend/colors')
+// const extendedBoxShadows = require('./extend/box-shadows')
 
-const base = require('./dist/base/combined')
-const components = require('./dist/components/combined')
+// const base = require('./dist/base/combined')
+// const components = require('./dist/components/combined')
 
 const DEFAULT_OPTIONS = {
-  baseFontSize: '14px',
-  typeScale: 1.200
+  baseFontSize: 14,
+  typeScale: 1.200,
+  fontSizeUnit: 'px'
 }
 
-const dotui = plugin.withOptions((options = DEFAULT_OPTIONS) => {
+const dotui = plugin.withOptions((options) => {
+  const settings = { ...DEFAULT_OPTIONS, ...options }
   return ({ addBase, addComponents }) => {
     addBase({
-      html: { fontSize: `${parseInt(options.baseFontSize, 10) * 100 / 16}%` }
+      html: { fontSize: `${settings.baseFontSize * 100 / 16}%` }
     })
-    addBase(base)
-    addComponents(components)
+    // addBase(base)
+    // addComponents(components)
   }
-}, (options = DEFAULT_OPTIONS) => {
+}, (options) => {
+  const settings = { ...DEFAULT_OPTIONS, ...options }
   return {
     theme: {
-      spacing: spacingCalculator(options.baseFontSize),
-      fontSize: fontSizeCalculator(options.baseFontSize, options.typeScale),
-      extend: {
-        colors: extendedColors,
-        boxShadow: extendedBoxShadows
-      }
+      // spacing: spacingCalculator(settings.baseFontSize),
+      fontSize: fontSizeCalculator(settings)
+      // extend: {
+      //   colors: extendedColors,
+      //   boxShadow: extendedBoxShadows
+      // }
     }
   }
 })

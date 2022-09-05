@@ -1,4 +1,4 @@
-module.exports = (baseFontSize, typeScale) => {
+module.exports = ({ baseFontSize, typeScale, fontSizeUnit }) => {
   const DEFAULT_SCALES = {
     '7xl': 8,
     '6xl': 7,
@@ -16,7 +16,9 @@ module.exports = (baseFontSize, typeScale) => {
 
   return Object.keys(DEFAULT_SCALES).reduce((acc, size) => {
     const exponent = DEFAULT_SCALES[size]
-    const multiplier = parseFloat(Math.pow(typeScale, exponent)).toPrecision(4)
-    return { ...acc, ...{ [size]: `${multiplier}rem` } }
+    const multiplier = parseFloat(
+      (fontSizeUnit === 'px' ? baseFontSize : 1) * Math.pow(typeScale, exponent)
+    ).toPrecision(4)
+    return { ...acc, ...{ [size]: `${multiplier}${fontSizeUnit}` } }
   }, {})
 }

@@ -9,7 +9,7 @@
       padding-left: 0.71428571rem;
       padding-right: 0.71428571rem;
       vertical-align: baseline;
-      font-size: 1.000rem;
+      font-size: 1.000undefined;
       font-weight: 400;
       line-height: 1.5;
 }
@@ -17,7 +17,7 @@
   .badge-sm {
       padding-left: 0.57142857rem;
       padding-right: 0.57142857rem;
-      font-size: 0.8333rem;
+      font-size: NaNundefined;
 }
 
   .badge-sm.badge-avatar {
@@ -67,7 +67,8 @@
          object-fit: cover;
 }
 
-  .badge-icon > .icon, .badge-icon > svg {
+  .badge-icon > .icon, 
+    .badge-icon > svg {
       margin-left: 0.42857143rem;
       height: 0.85714286rem;
       width: 0.85714286rem;
@@ -75,7 +76,8 @@
       opacity: 0.6;
 }
 
-  .badge-icon--left > .icon, .badge-icon--left > svg {
+  .badge-icon--left > .icon, 
+      .badge-icon--left > svg {
       order: 9999;
       margin-left: 0px;
       margin-right: 0.42857143rem;

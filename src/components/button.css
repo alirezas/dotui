@@ -1,3 +1,17 @@
+/**
+ * Buttons
+ * Styles for Buttons.
+ *
+ * Sizes: { xs, sm, md, lg, xl, 2xl }
+ * Default: md
+ *
+ * Variants: { solid, outline, ghost, link }
+ *
+ * Icons: { left, right, icon-only }
+ *
+ * States: { active, disabled, loading }
+ */
+
 .button {
   @apply inline-flex py-2.5 px-4 rounded-lg transition duration-200 font-medium cursor-pointer border box-border whitespace-nowrap leading-normal text-center justify-center;
 

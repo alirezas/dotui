@@ -16,16 +16,16 @@
     "*.js"
   ],
   "keywords": [
-      "ui",
-      "css",
-      "tailwindcss",
-      "design",
-      "ui-kit",
-      "design-system",
-      "ui-library",
-      "ui-components",
-      "persian",
-      "farsi"
+    "ui",
+    "css",
+    "tailwindcss",
+    "design",
+    "ui-kit",
+    "design-system",
+    "ui-library",
+    "ui-components",
+    "persian",
+    "farsi"
   ],
   "watch": {
     "build": {
@@ -56,7 +56,7 @@
     "autoprefixer": "^10.4.4",
     "npm-watch": "^0.11.0",
     "postcss": "^8.4.12",
-    "postcss-cli": "^9.1.0",
+    "postcss-cli": "^10.0.0",
     "postcss-import": "^14.1.0",
     "postcss-js": "^4.0.0",
     "postcss-nested": "^5.0.6",
