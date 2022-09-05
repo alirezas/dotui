@@ -3,6 +3,7 @@ jspm_packages/
 .npm
 .vscode-test
 .vscode
+dist/
 
 # General
 .DS_Store
