@@ -10,32 +10,35 @@ const extendedBoxShadows = require('./extend/box-shadows')
 
 const DEFAULT_OPTIONS = {
   baseFontSize: 14,
-  typeScale: 1.200,
+  typeScale: 1.2,
   fontSizeUnit: 'px',
   spacingUnit: 'px'
 }
 
-const dotui = plugin.withOptions((options) => {
-  const settings = { ...DEFAULT_OPTIONS, ...options }
-  return ({ addBase, addComponents }) => {
-    addBase({
-      html: { fontSize: `${settings.baseFontSize * 100 / 16}%` }
-    })
-    // addBase(base)
-    // addComponents(components)
-  }
-}, (options) => {
-  const settings = { ...DEFAULT_OPTIONS, ...options }
-  return {
-    theme: {
-      spacing: spacingCalculator(settings),
-      fontSize: fontSizeCalculator(settings),
-      extend: {
-        colors: extendedColors,
-        boxShadow: extendedBoxShadows
+const dotui = plugin.withOptions(
+  (options) => {
+    const settings = { ...DEFAULT_OPTIONS, ...options }
+    return ({ addBase }) => {
+      addBase({
+        html: { fontSize: `${(settings.baseFontSize * 100) / 16}%` }
+      })
+      // addBase(base)
+      // addComponents(components)
+    }
+  },
+  (options) => {
+    const settings = { ...DEFAULT_OPTIONS, ...options }
+    return {
+      theme: {
+        spacing: spacingCalculator(settings),
+        fontSize: fontSizeCalculator(settings),
+        extend: {
+          colors: extendedColors,
+          boxShadow: extendedBoxShadows
+        }
       }
     }
   }
-})
+)
 
 module.exports = dotui
