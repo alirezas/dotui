@@ -1,0 +1,7 @@
+.container {
+  @apply border-n-gray-300 rounded border shadow-n-sm p-5 bg-gray-50;
+}
+
+.containerCentered {
+  @apply flex items-center justify-center;
+}

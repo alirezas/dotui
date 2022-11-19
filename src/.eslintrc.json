@@ -1,0 +1,27 @@
+{
+    "root": true,
+    "extends": [
+        "eslint:recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "rules": {
+        "semi": [
+            2,
+            "never"
+        ],
+        "quotes": [
+            2,
+            "single",
+            {
+                "avoidEscape": true
+            }
+        ]
+    }
+}

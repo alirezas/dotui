@@ -1,6 +1,6 @@
 {
     "name": "@noqte/ui",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "description": "Component library based on Tailwindcss.",
     "author": "Alireza Sarabchi <a.sarabchi@gmail.com> (https://alireza.ws)",
     "license": "MIT",
@@ -8,13 +8,11 @@
     "publishConfig": {
         "access": "public"
     },
-    "main": "index.js",
     "files": [
         "dist/*",
-        "extend/*",
-        "utils/*",
-        "*.js"
+        "src/index.js"
     ],
+    "main": "src/index.js",
     "keywords": [
         "ui",
         "css",
@@ -37,25 +35,32 @@
         }
     },
     "scripts": {
-        "lint": "npx eslint .",
-        "postcss:base": "postcss src/base/*.css --base src --dir dist",
-        "combine:base": "cat dist/base/*.css > dist/base/combined.css",
-        "prejss:base": "prejss-cli dist/base/combined.css --format commonjs --pretty",
-        "build:base": "npm run postcss:base && npm run combine:base && npm run prejss:base",
-        "postcss:components": "postcss src/components/*.css --base src --dir dist",
-        "combine:components": "cat dist/components/*.css > dist/components/combined.css",
-        "prejss:components": "prejss-cli dist/components/combined.css --format commonjs --pretty",
-        "build:components": "npm run postcss:components && npm run combine:components && npm run prejss:components",
+        "lint": "npx eslint src/**/*.js",
+        "prebase": "postcss --config src src/base/*.css --base src --dir dist",
+        "base": "prejss-cli dist/base/*.css --format commonjs --pretty",
+        "precomponents": "postcss --config src src/components/*.css --base src --dir dist",
+        "components": "prejss-cli dist/components/*.css --format commonjs --pretty",
         "clear": "rm -rf dist/*",
-        "build": "npm run clear && npm run build:base && npm run build:components",
+        "build": "npm run clear && npm run components && npm run base",
+        "docs:install": "cd docs && npm install",
+        "docs:dev": "cd docs && npm run dev",
+        "docs:build": "cd docs && npm run build",
+        "docs:lint": "cd docs && npm run lint",
         "watch": "npm-watch build",
+        "release": "rm -f package-lock.json && standard-version",
+        "release:patch": "rm -f package-lock.json && standard-version --release-as patch",
+        "release:minor": "rm -f package-lock.json && standard-version --release-as minor",
+        "release:major": "rm -f package-lock.json && standard-version --release-as major",
         "prepare": "husky install"
     },
     "peerDependencies": {
+        "autoprefixer": "^10.4.4",
+        "postcss": "^8.4.12"
+    },
+    "dependencies": {
         "tailwindcss": "^3.0.23"
     },
     "devDependencies": {
-        "autoprefixer": "^10.4.4",
         "eslint": "^8.27.0",
         "eslint-config-prettier": "^8.5.0",
         "eslint-config-standard": "^17.0.0",
@@ -65,12 +70,12 @@
         "eslint-plugin-promise": "^6.1.1",
         "husky": "^8.0.2",
         "npm-watch": "^0.11.0",
-        "postcss": "^8.4.12",
         "postcss-cli": "^10.0.0",
         "postcss-import": "^15.0.0",
         "postcss-js": "^4.0.0",
         "postcss-nested": "^5.0.6",
         "prejss-cli": "^0.3.3",
-        "prettier": "^2.7.1"
+        "prettier": "^2.7.1",
+        "standard-version": "^9.5.0"
     }
 }

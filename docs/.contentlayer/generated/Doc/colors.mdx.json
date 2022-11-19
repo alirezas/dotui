@@ -1,0 +1,23 @@
+{
+  "title": "رنگ‌ها",
+  "section": {
+    "slug": "core",
+    "title": "مفاهیم پایه",
+    "type": "Category",
+    "_raw": {}
+  },
+  "body": {
+    "raw": "",
+    "code": "var Component=(()=>{var x=Object.create;var s=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var l=Object.getOwnPropertyNames;var _=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var j=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),d=(t,e)=>{for(var n in e)s(t,n,{get:e[n],enumerable:!0})},c=(t,e,n,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of l(e))!g.call(t,o)&&o!==n&&s(t,o,{get:()=>e[o],enumerable:!(a=f(e,o))||a.enumerable});return t};var p=(t,e,n)=>(n=t!=null?x(_(t)):{},c(e||!t||!t.__esModule?s(n,\"default\",{value:t,enumerable:!0}):n,t)),M=t=>c(s({},\"__esModule\",{value:!0}),t);var u=j((h,i)=>{i.exports=_jsx_runtime});var X={};d(X,{default:()=>F,frontmatter:()=>C});var r=p(u()),C={title:\"\\u0631\\u0646\\u06AF\\u200C\\u0647\\u0627\",section:{slug:\"core\",title:\"\\u0645\\u0641\\u0627\\u0647\\u06CC\\u0645 \\u067E\\u0627\\u06CC\\u0647\"}};function m(t){return(0,r.jsx)(r.Fragment,{})}function D(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(m,t)})):m(t)}var F=D;return M(X);})();\n;return Component;"
+  },
+  "_id": "colors.mdx",
+  "_raw": {
+    "sourceFilePath": "colors.mdx",
+    "sourceFileName": "colors.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "colors"
+  },
+  "type": "Doc",
+  "url": "/docs/colors"
+}

@@ -1,0 +1,27 @@
+---
+title: نصب و راه‌اندازی
+section:
+  slug: introduction
+  title: شروع
+---
+
+برای نسب کافیست دستور زیر را در پروژه خود اجرا کنید.
+
+```bash
+npm install -D @noqte/ui
+```
+
+پس از نسب `@noqte/ui` را به عنوان پلاگین به Tailwindcss معرفی کنید.
+
+```js:tailwind.config.js showLineNumbers {8}
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [],
+  theme: {
+    extend: {}
+  },
+  plugins: [
+    require('@noqte/ui')
+  ]
+}
+```

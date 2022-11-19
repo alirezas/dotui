@@ -1,0 +1,23 @@
+{
+  "title": "بج",
+  "section": {
+    "slug": "components",
+    "title": "کامپوننت‌ها",
+    "type": "Category",
+    "_raw": {}
+  },
+  "body": {
+    "raw": "\n<Preview>\n  <span class=\"badge badge-primary\">نمونه بج</span>\n  <span class=\"badge badge-danger\">نمونه بج</span>\n</Preview>\n\n```html\n<span class=\"badge badge-primary\">نمونه بج</span>\n```\n",
+    "code": "var Component=(()=>{var p=Object.create;var c=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var h=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var N=(a,e)=>()=>(e||a((e={exports:{}}).exports,e),e.exports),f=(a,e)=>{for(var t in e)c(a,t,{get:e[t],enumerable:!0})},r=(a,e,t,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let s of u(e))!g.call(a,s)&&s!==t&&c(a,s,{get:()=>e[s],enumerable:!(o=m(e,s))||o.enumerable});return a};var k=(a,e,t)=>(t=a!=null?p(h(a)):{},r(e||!a||!a.__esModule?c(t,\"default\",{value:a,enumerable:!0}):t,a)),x=a=>r(c({},\"__esModule\",{value:!0}),a);var l=N((M,i)=>{i.exports=_jsx_runtime});var v={};f(v,{default:()=>j,frontmatter:()=>_});var n=k(l()),_={title:\"\\u0628\\u062C\",section:{slug:\"components\",title:\"\\u06A9\\u0627\\u0645\\u067E\\u0648\\u0646\\u0646\\u062A\\u200C\\u0647\\u0627\"}};function d(a){let e=Object.assign({pre:\"pre\",code:\"code\",span:\"span\"},a.components),{Preview:t}=e;return t||y(\"Preview\",!0,\"8:1-11:11\"),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsxs)(t,{children:[(0,n.jsx)(\"span\",{class:\"badge badge-primary\",children:\"\\u0646\\u0645\\u0648\\u0646\\u0647 \\u0628\\u062C\"}),`\n`,(0,n.jsx)(\"span\",{class:\"badge badge-danger\",children:\"\\u0646\\u0645\\u0648\\u0646\\u0647 \\u0628\\u062C\"})]}),`\n`,(0,n.jsx)(e.pre,{className:\"language-html\",children:(0,n.jsx)(e.code,{className:\"language-html code-highlight\",children:(0,n.jsxs)(e.span,{className:\"code-line\",children:[(0,n.jsxs)(e.span,{className:\"token tag\",children:[(0,n.jsxs)(e.span,{className:\"token tag\",children:[(0,n.jsx)(e.span,{className:\"token punctuation\",children:\"<\"}),\"span\"]}),\" \",(0,n.jsx)(e.span,{className:\"token attr-name\",children:\"class\"}),(0,n.jsxs)(e.span,{className:\"token attr-value\",children:[(0,n.jsx)(e.span,{className:\"token punctuation attr-equals\",children:\"=\"}),(0,n.jsx)(e.span,{className:\"token punctuation\",children:'\"'}),\"badge badge-primary\",(0,n.jsx)(e.span,{className:\"token punctuation\",children:'\"'})]}),(0,n.jsx)(e.span,{className:\"token punctuation\",children:\">\"})]}),\"\\u0646\\u0645\\u0648\\u0646\\u0647 \\u0628\\u062C\",(0,n.jsxs)(e.span,{className:\"token tag\",children:[(0,n.jsxs)(e.span,{className:\"token tag\",children:[(0,n.jsx)(e.span,{className:\"token punctuation\",children:\"</\"}),\"span\"]}),(0,n.jsx)(e.span,{className:\"token punctuation\",children:\">\"})]}),`\n`]})})})]})}function b(a={}){let{wrapper:e}=a.components||{};return e?(0,n.jsx)(e,Object.assign({},a,{children:(0,n.jsx)(d,a)})):d(a)}var j=b;function y(a,e,t){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+a+\"` to be defined: you likely forgot to import, pass, or provide it.\"+(t?\"\\nIt\\u2019s referenced in your code at `\"+t+\"` in `/Users/alireza/dev/noqte-ui-docs/docs/_mdx_bundler_entry_point-6a864341-cd9f-48d3-a09e-02e5df5211f2.mdx`\":\"\"))}return x(v);})();\n;return Component;"
+  },
+  "_id": "badges.mdx",
+  "_raw": {
+    "sourceFilePath": "badges.mdx",
+    "sourceFileName": "badges.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "badges"
+  },
+  "type": "Doc",
+  "url": "/docs/badges"
+}

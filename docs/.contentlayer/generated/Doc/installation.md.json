@@ -1,0 +1,23 @@
+{
+  "title": "نسب و راه‌اندازی",
+  "section": {
+    "slug": "introduction",
+    "title": "شروع",
+    "type": "Category",
+    "_raw": {}
+  },
+  "body": {
+    "raw": "\n```\nnpm install -D @noqte/ui\n```\n",
+    "html": "<pre><code>npm install -D @noqte/ui\n</code></pre>"
+  },
+  "_id": "installation.md",
+  "_raw": {
+    "sourceFilePath": "installation.md",
+    "sourceFileName": "installation.md",
+    "sourceFileDir": ".",
+    "contentType": "markdown",
+    "flattenedPath": "installation"
+  },
+  "type": "Doc",
+  "url": "/docs/installation"
+}

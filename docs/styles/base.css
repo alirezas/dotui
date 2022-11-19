@@ -1,0 +1,8 @@
+body {
+  @apply font-yekanBakh;
+}
+
+pre,
+code {
+  direction: ltr;
+}

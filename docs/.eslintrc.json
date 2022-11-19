@@ -1,0 +1,27 @@
+{
+    "root": true,
+    "extends": [
+        "next",
+        "next/core-web-vitals",
+        "eslint:recommended",
+        "plugin:prettier/recommended",
+        "prettier/prettier"
+    ],
+    "rules": {
+        "@next/next/no-html-link-for-pages": [
+            "error",
+            "docs/pages"
+        ],
+        "semi": [
+            2,
+            "never"
+        ],
+        "quotes": [
+            2,
+            "single",
+            {
+                "avoidEscape": true
+            }
+        ]
+    }
+}
