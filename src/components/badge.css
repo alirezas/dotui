@@ -2,7 +2,7 @@
   @apply inline-flex rounded-full py-0.5 px-2.5 align-baseline whitespace-nowrap font-normal text-base leading-normal items-center relative;
 
   &-sm {
-    @apply px-2 text-tiny;
+    @apply px-2 text-sm;
 
     &.badge-avatar {
       @apply pr-0.5;
